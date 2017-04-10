@@ -1,0 +1,36 @@
+{
+  "name": "poodle",
+  "version": "1.0.0",
+  "description": "An intiutive smart scheduler/assistant",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codebyomar/poodle.git"
+  },
+  "keywords": [
+    "Intuitive",
+    "smart",
+    "assistant",
+    "scheduler"
+  ],
+  "author": "codebyomar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codebyomar/poodle/issues"
+  },
+  "homepage": "https://github.com/codebyomar/poodle#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "escape-html": "^1.0.3",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.2",
+    "morgan": "^1.8.1",
+    "node-cron": "^1.1.3",
+    "node-schedule": "^1.2.1",
+    "path": "^0.12.7",
+    "pusher": "^1.5.1"
+  }
+}

@@ -1,0 +1,83 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+.side-col{
+    position: relative;
+    background-color: indianred;
+}
+
+.side-col > img{
+    margin: 300px 0px 252px 15px;
+}
+
+.main-col{
+    background-color: #fff;
+}
+
+#container{
+    position: absolute;
+    background-color: indianred;
+}
+
+.user-form{
+    position: relative;
+    margin: 90px 0 150px 0;
+    height: 100%
+}
+
+.default-btn{
+    background-color: indianred;
+    border-color: #cd5c5c;
+    color: #fff;
+}
+
+.default-btn:hover{
+    background-color: transparent;
+    border-color: #cd5c5c;
+}
+
+.default-btn:active{
+    background-color: transparent;
+    border-color: #cd5c5c;
+}
+
+h1,h5{
+    font-family: 'Amatic SC', cursive;
+}
+
+.bottom{
+    background-color:#f2f2f2;
+    height:29px;
+    overflow-x: hidden;
+    color: #cd5c5c;
+    width: 95%;
+    position: absolute;
+    margin-bottom: 0px;
+}
+
+.f-elmts{
+    padding: 0px 7px 0px 7px;
+}
+
+.top{
+    background-color:#ccc;
+    height:auto;
+    overflow-x: hidden;
+    color: #cd5c5c;
+    position: absolute;
+}
+
+.board{
+    position: relative;
+    margin:10px 0px 150px 0px;
+}
+
+.sidebar{
+    position: relative;
+    margin:10px 100px 150px 0px;
+}
+
+.main-board{
+    position: relative;
+    margin:90px 0px 150px 50px;
+}

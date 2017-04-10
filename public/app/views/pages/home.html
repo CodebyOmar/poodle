@@ -1,0 +1,62 @@
+
+         <div class="user-form" id="user">
+         <strong class="text-center">
+             <a data-ng-href="#poodle_board"><h1>Welcome, I'm Poodle.</h1></a>
+         </strong> 
+         <h4 class="text-center" style="color:indianred"><i class="fa fa-dropbox"></i> Setup your account to get started.</h4>   
+          <form ng-submit="user.saveUser()" class="form-horizontal">
+              <div class="form-group">
+                  <div class="col-sm-5 col-sm-offset-3">
+                      <div class="form-material">
+                          <label for="validation-lastname">Name</label>
+                          <input class="form-control" type="text" placeholder="What do you want me to call you?" ng-model="user.userData.name" name="name">
+                      </div>
+                   </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-5 col-sm-offset-3">
+                      <div class="form-material">
+                          <label for="validation-lastname">Email</label>
+                          <input class="form-control" type="email" placeholder="Please enter your email" ng-model="user.userData.email" name="email">
+                      </div>
+                   </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-5 col-sm-offset-3">
+                      <div class="form-material">
+                          <label for="validation-lastname">Phone Number</label>
+                          <input class="form-control" type="text" placeholder="Please enter your phone number" ng-model="user.userData.phone" name="phone">
+                      </div>
+                   </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-5 col-sm-offset-3">
+                      <div class="form-material" ng-if="user.error">
+                          <div class="alert alert-info">
+                              {{ user.error }}
+                          </div>
+                      </div>
+                   </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-5 col-sm-offset-5">
+                      <div class="form-material">
+                          <button type="submit" class="btn default-btn btn-lg">
+                              <span ng-if="user.processing == 'true'">creating..</span>
+                              Create
+                          </button>
+                      </div>
+                   </div>
+              </div>
+          </form>
+       </div>
+       <div class="bottom">
+         <span class="f-elmts">&copypoodle.io</span>
+         <span class="pull-right">
+         <span class="f-elmts">Developers</span>
+         <span class="f-elmts">Documentation</span>
+         <span class="f-elmts">Support</span>
+         </span>
+     </div>
+     
+    

@@ -1,0 +1,235 @@
+        <!--header-->
+       <div class="top">
+           Poodle Board
+       </div>
+       <!--end of header-->
+       <div class="main-board">
+       <!--sidebar-->
+       <div class="pull-left sidebar">
+           <span>Monday</span><br>
+           <span>Tuesday</span><br>
+           <span>Wednesday</span><br>
+           <span>Thursday</span><br>
+           <span>Friday</span><br>
+           <span>Saturday</span><br>
+           <span>Sunday</span><br>
+           <span id="notice"></span>
+       </div>
+       <!--end of sidebar-->
+
+       <!--main board-->
+       <div class="col-md-9 board">
+           <section class="task-panel tasks-widget">
+	                	<div class="panel-heading">
+	                        <div class="pull-left"><h5><i class="fa fa-tasks"></i> Todo List - Sortable Style</h5></div>
+	                        <br>
+	                 	</div>
+                          <div class="panel-body">
+                              <div class="task-content">
+                                  <ul id="sortable" class="task-list">
+                                      <li class="list-primary">
+                                          <i class=" fa fa-ellipsis-v"></i>
+                                          <div class="task-checkbox">
+                                              <input type="checkbox" class="list-child" value=""  />
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Dashgum - Admin Panel Theme</span>
+                                              <span class="badge bg-theme">Done</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
+                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
+                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
+                                              </div>
+                                          </div>
+                                      </li>
+
+                                      <li class="list-danger">
+                                          <i class=" fa fa-ellipsis-v"></i>
+                                          <div class="task-checkbox">
+                                              <input type="checkbox" class="list-child" value=""  />
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Extensive collection of plugins</span>
+                                              <span class="badge bg-warning">Cool</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
+                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
+                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="list-success">
+                                          <i class=" fa fa-ellipsis-v"></i>
+                                          <div class="task-checkbox">
+                                              <input type="checkbox" class="list-child" value=""  />
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Free updates always, no extra fees.</span>
+                                              <span class="badge bg-success">2 Days</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
+                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
+                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="list-warning">
+                                          <i class=" fa fa-ellipsis-v"></i>
+                                          <div class="task-checkbox">
+                                              <input type="checkbox" class="list-child" value=""  />
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">More features coming soon</span>
+                                              <span class="badge bg-info">Tomorrow</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
+                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
+                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="list-info">
+                                          <i class=" fa fa-ellipsis-v"></i>
+                                          <div class="task-checkbox">
+                                              <input type="checkbox" class="list-child" value=""  />
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Hey, seriously, you should buy this Dashboard</span>
+                                              <span class="badge bg-important">Now</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-success btn-xs fa fa-check"></button>
+                                                  <button class="btn btn-primary btn-xs fa fa-pencil"></button>
+                                                  <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
+                                              </div>
+                                          </div>
+                                      </li>
+
+                                  </ul>
+                              </div>
+                              <div class=" add-task-row text-center">
+                                  <button class="btn btn-success btn-sm pull-left" data-toggle="modal" data-target="#myModal">Add New Tasks</button>
+                              </div>
+                          </div>
+                      </section>  
+       </div>
+       <!--end of main board-->
+       </div>
+       <!--footer-->
+       <!--div class="bottom">
+         <span class="f-elmts">&copypoodle.io</span>
+         <span class="pull-right">
+         <span class="f-elmts">Developers</span>
+         <span class="f-elmts">Documentation</span>
+         <span class="f-elmts">Support</span>
+         </span-->
+       </div>
+       <!--end of footer-->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Give me a new task</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+            <form ng-submit="job.addTask()" class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-sm-9 col-sm-offset-1">
+                      <div class="form-material">
+                          <label for="title">Title</label>
+                          <input class="form-control" type="text" placeholder="What do you want me to remind you of?" ng-model="job.jobData.title" name="title">
+                      </div>
+                   </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-9 col-sm-offset-1">
+                      <div class="form-material">
+                          <label for="time">Time</label>
+                          <input class="form-control" type="text" placeholder="At what time?" ng-model="job.jobData.time" name="time">
+                      </div>
+                   </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-9 col-sm-offset-1">
+                      <div class="form-material" ng-show="job.message">
+                          {{job.message}}
+                      </div>
+                   </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-9 col-sm-offset-1">
+                      <div class="form-material" id="notification">
+                          
+                      </div>
+                   </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-9 col-sm-offset-1">
+                      <div class="form-material">
+                          <button type="submit" class="pull-left btn default-btn">Add</button>
+                      </div>
+                   </div>
+                </div>
+                </form>
+        </p>
+      </div>
+      <div class="modal-footer">
+        
+           
+        <button type="button" class="pull-right btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+       
+    </div>
+
+  </div>
+</div>
+
+<script>
+      jQuery(document).ready(function() {
+          TaskList.initTaskWidget();
+      });
+
+      $(function() {
+          $( "#sortable" ).sortable();
+          $( "#sortable" ).disableSelection();
+      });
+
+    </script>
+    
+    
+  <script>
+      //custom select box
+
+     /** $(function(){
+          $('select.styled').customSelect();
+      });*/
+      // Enable pusher logging - don't include this in production
+      Pusher.logToConsole = true;
+
+      var pusher = new Pusher('9dddcf3ac6b11b8b5ec2',{
+          encrypted: true
+      });
+	  var notificationsChannel = pusher.subscribe('notifications');
+
+      /**notificationsChannel.bind('pusher:subscription_succeeded', function(data) {
+          var message = data.message;
+		  toastr.success(message)
+      });*/
+
+	  notificationsChannel.bind('new_notification', function(data){
+          var message = data.message;
+		  if(message)
+          {
+		  toastr.success(message)
+          $('#notice').text(message);
+          }else{
+            alert("New notification: "+message);
+            $('#notice').text('message');
+          }
+	  });
+
+  </script>
